@@ -275,14 +275,14 @@ class peerMain:
         self.registryName = input("Enter IP address of registry: ")
         # self.registryName = 'localhost'
         # port number of the registry
-        self.registryPort = 67761
+        self.registryPort = 10000
         # tcp socket connection to registry
         self.tcpClientSocket = socket(AF_INET, SOCK_STREAM)
         self.tcpClientSocket.connect((self.registryName, self.registryPort))
         # initializes udp socket which is used to send hello messages
         self.udpClientSocket = socket(AF_INET, SOCK_DGRAM)
         # udp port of the registry
-        self.registryUDPPort = 67762
+        self.registryUDPPort = 10001
         # login info of the peer
         self.loginCredentials = (None, None)
         # online status of the peer

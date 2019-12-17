@@ -176,8 +176,8 @@ class UDPServer(threading.Thread):
 
 # tcp and udp server port initializations
 print("Registy started...")
-port = 67761
-portUDP = 67762
+port = 10000
+portUDP = 10001
 
 # db initialization
 db = db.DB()
