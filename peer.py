@@ -302,7 +302,13 @@ class peerMain:
         # as long as the user is not logged out, asks to select an option in the menu
         while choice != "3":
             # menu selection prompt
-            choice = input("Choose: \nCreate account: 1\nLogin: 2\nLogout: 3\nSearch: 4\nStart a chat: 5\n")
+            # choice = input("Choose: \nCreate account: 1\nLogin: 2\nLogout: 3\nSearch: 4\nStart a chat: 5\n")
+            choice = input("\n --- Operation Instructions---\n"
+                           "[1] SignUp: create account\n"
+                           "[2] LogIn: login\n"
+                           "[3] LogOut: logout\n"
+                           "[4] Search: search for peer by username\n"
+                           "[5] Chat: start chat\n")
             # if choice is 1, creates an account with the username
             # and password entered by the user
             if choice is "1":
