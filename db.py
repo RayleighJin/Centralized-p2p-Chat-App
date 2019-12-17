@@ -7,7 +7,7 @@ class DB:
     # db initializations
     def __init__(self):
         self.client = MongoClient('mongodb://localhost:27017/')
-        self.db = self.client['p2p-chat']
+        self.db = self.client['6776-p2p-chat']
 
     # checks if an account with the username exists
     def is_account_exist(self, username):
